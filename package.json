@@ -4,9 +4,9 @@
   "description": "parse argument options",
   "main": "index.js",
   "devDependencies": {
-    "covert": "1.0.0",
-    "tap": "14.9.2",
-    "tape": "4.11.0"
+    "covert": "1.1.1",
+    "tap": "18.5.3",
+    "tape": "5.7.2"
   },
   "scripts": {
     "test": "tap test/*.js",
