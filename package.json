@@ -1,26 +1,25 @@
 {
-  "name": "vscode-minimist",
-  "version": "1.2.2",
+  "author": {
+    "email": "mail@substack.net",
+    "name": "James Halliday",
+    "url": "http://substack.net"
+  },
   "description": "parse argument options",
+  "devDependencies": {
+    "covert": "1.0.0",
+    "tap": "14.9.2",
+    "tape": "4.11.0"
+  },
   "homepage": "https://github.com/substack/minimist",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "vscode-minimist",
   "repository": {
     "type": "git",
     "url": "git://github.com/substack/minimist.git"
   },
-  "license": "MIT",
-  "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
-  },
-  "main": "index.js",
   "scripts": {
     "coverage": "covert test/*.js"
-  },
-  "devDependencies": {
-    "covert": "^1.0.0",
-    "tap": "^14.9.2",
-    "tape": "^4.11.0"
   },
   "testling": {
     "browsers": [
@@ -34,5 +33,6 @@
       "opera/12"
     ],
     "files": "test/*.js"
-  }
+  },
+  "version": "1.2.2"
 }
