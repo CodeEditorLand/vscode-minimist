@@ -1,45 +1,48 @@
 {
-  "name": "vscode-minimist",
-  "version": "1.2.2",
-  "description": "parse argument options",
-  "main": "index.js",
-  "devDependencies": {
-    "covert": "1.1.1",
-    "tap": "18.7.1",
-    "tape": "5.7.5"
-  },
-  "scripts": {
-    "test": "tap test/*.js",
-    "coverage": "covert test/*.js"
-  },
-  "testling": {
-    "files": "test/*.js",
-    "browsers": [
-      "ie/6..latest",
-      "ff/5",
-      "firefox/latest",
-      "chrome/10",
-      "chrome/latest",
-      "safari/5.1",
-      "safari/latest",
-      "opera/12"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/substack/minimist.git"
-  },
-  "homepage": "https://github.com/substack/minimist",
-  "keywords": [
-    "argv",
-    "getopt",
-    "parser",
-    "optimist"
-  ],
-  "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
-  },
-  "license": "MIT"
+	"name": "vscode-minimist",
+	"version": "0.0.1",
+	"private": false,
+	"description": "parse argument options",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"coverage": "covert test/*.js",
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
+	},
+	"devDependencies": {
+		"covert": "1.1.1",
+		"tap": "18.7.1",
+		"tape": "5.7.5",
+		"typescript-esbuild": "latest"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"testling": {
+		"browsers": [
+			"ie/6..latest",
+			"ff/5",
+			"firefox/latest",
+			"chrome/10",
+			"chrome/latest",
+			"safari/5.1",
+			"safari/latest",
+			"opera/12"
+		],
+		"files": "test/*.js"
+	}
 }
