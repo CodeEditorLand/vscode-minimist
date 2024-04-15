@@ -1,13 +1,32 @@
 {
+	"author": {
+		"email": "Land@Playform.Cloud",
+		"name": "Land",
+		"url": "HTTPS://Land.Playform.Cloud"
+	},
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandMinimist/issues"
+	},
 	"description": "parse argument options",
 	"devDependencies": {
 		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6",
 		"covert": "1.1.1",
 		"tap": "18.7.2",
 		"tape": "5.7.5"
 	},
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandMinimist#readme",
+	"license": "SEE LICENSE IN LICENSE",
 	"main": "index.js",
 	"name": "vscode-minimist",
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandMinimist.git"
+	},
 	"scripts": {
 		"Document": "Document 'Source/**/*.ts'",
 		"coverage": "covert test/*.js",
@@ -25,5 +44,7 @@
 			"opera/12"
 		],
 		"files": "test/*.js"
-	}
+	},
+	"type": "module",
+	"version": "0.0.1"
 }
