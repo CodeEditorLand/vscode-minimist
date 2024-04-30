@@ -1,45 +1,53 @@
 {
-  "name": "vscode-minimist",
-  "version": "1.2.2",
-  "description": "parse argument options",
-  "main": "index.js",
-  "devDependencies": {
-    "covert": "^1.0.0",
-    "tap": "^14.9.2",
-    "tape": "^4.11.0"
-  },
-  "scripts": {
-    "test": "tap test/*.js",
-    "coverage": "covert test/*.js"
-  },
-  "testling": {
-    "files": "test/*.js",
-    "browsers": [
-      "ie/6..latest",
-      "ff/5",
-      "firefox/latest",
-      "chrome/10",
-      "chrome/latest",
-      "safari/5.1",
-      "safari/latest",
-      "opera/12"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/substack/minimist.git"
-  },
-  "homepage": "https://github.com/substack/minimist",
-  "keywords": [
-    "argv",
-    "getopt",
-    "parser",
-    "optimist"
-  ],
-  "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
-  },
-  "license": "MIT"
+	"name": "vscode-minimist",
+	"version": "0.0.1",
+	"private": false,
+	"description": "parse argument options",
+	"keywords": [
+		"land"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandMinimist#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandMinimist/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandMinimist.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "🌆 — Land —",
+		"email": "Land@PlayForm.Cloud",
+		"url": "HTTPS://Land.PlayForm.Cloud"
+	},
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"coverage": "covert test/*.js",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
+	"devDependencies": {
+		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6",
+		"covert": "^1.0.0",
+		"tap": "^14.9.2",
+		"tape": "^4.11.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"testling": {
+		"browsers": [
+			"ie/6..latest",
+			"ff/5",
+			"firefox/latest",
+			"chrome/10",
+			"chrome/latest",
+			"safari/5.1",
+			"safari/latest",
+			"opera/12"
+		],
+		"files": "test/*.js"
+	}
 }
