@@ -31,7 +31,7 @@
 		"@playform/build": "0.0.7",
 		"@playform/document": "0.0.6",
 		"covert": "1.1.1",
-		"tap": "18.7.2",
+		"tap": "18.7.3",
 		"tape": "5.7.5"
 	},
 	"publishConfig": {
