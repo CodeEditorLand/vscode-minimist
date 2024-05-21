@@ -6,9 +6,9 @@
 		"coverage": "covert test/*.js"
 	},
 	"devDependencies": {
-		"covert": "1.0.0",
-		"tap": "14.9.2",
-		"tape": "4.11.0"
+		"covert": "1.1.1",
+		"tap": "18.8.0",
+		"tape": "5.7.5"
 	},
 	"testling": {
 		"browsers": [
