@@ -9,7 +9,10 @@
  * @param args An optional argument array (typically `process.argv.slice(2)`)
  * @param opts An optional options object to customize the parsing
  */
-declare function minimist(args?: string[], opts?: minimist.Opts): minimist.ParsedArgs;
+declare function minimist(
+	args?: string[],
+	opts?: minimist.Opts,
+): minimist.ParsedArgs;
 
 /**
  * Return an argument object populated with the array arguments from args. Strongly-typed
@@ -19,7 +22,10 @@ declare function minimist(args?: string[], opts?: minimist.Opts): minimist.Parse
  * @param args An optional argument array (typically `process.argv.slice(2)`)
  * @param opts An optional options object to customize the parsing
  */
-declare function minimist<T>(args?: string[], opts?: minimist.Opts): T & minimist.ParsedArgs;
+declare function minimist<T>(
+	args?: string[],
+	opts?: minimist.Opts,
+): T & minimist.ParsedArgs;
 
 /**
  * Return an argument object populated with the array arguments from args. Strongly-typed
@@ -29,7 +35,10 @@ declare function minimist<T>(args?: string[], opts?: minimist.Opts): T & minimis
  * @param args An optional argument array (typically `process.argv.slice(2)`)
  * @param opts An optional options object to customize the parsing
  */
-declare function minimist<T extends minimist.ParsedArgs>(args?: string[], opts?: minimist.Opts): T;
+declare function minimist<T extends minimist.ParsedArgs>(
+	args?: string[],
+	opts?: minimist.Opts,
+): T;
 
 declare namespace minimist {
 	export interface Opts {
@@ -69,7 +78,7 @@ declare namespace minimist {
 		 * When true, populate argv._ with everything before the -- and argv['--'] with everything after the --.
 		 * Note that with -- set, parsing for arguments still stops after the `--`.
 		 */
-		'--'?: boolean;
+		"--"?: boolean;
 	}
 
 	export interface ParsedArgs {
@@ -78,7 +87,7 @@ declare namespace minimist {
 		/**
 		 * If opts['--'] is true, populated with everything after the --
 		 */
-		'--'?: string[];
+		"--"?: string[];
 
 		/**
 		 * Contains all the arguments that didn't have an option associated with them
