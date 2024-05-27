@@ -2,25 +2,24 @@
 
 parse argument options
 
-This module is the guts of optimist's argument parser without all the fanciful
-decoration.
+This module is the guts of optimist's argument parser without all the
+fanciful decoration.
 
 [![Build Status](https://dev.azure.com/vscode/vscode-minimist/_apis/build/status/microsoft.vscode-minimist?branchName=master)](https://dev.azure.com/vscode/vscode-minimist/_build/latest?definitionId=29&branchName=master)
 
 ### Publish to NPM
 
-Simply push a new tag and the CI will automatically publish to NPM. The usual
-flow is:
+Simply push a new tag and the CI will automatically publish to NPM. The usual flow is:
 
 ```sh
-npm version [minor | patch]
+npm version [minor|patch]
 git push --follow-tags
 ```
 
 # example
 
-```js
-var argv = require("minimist")(process.argv.slice(2));
+``` js
+var argv = require('minimist')(process.argv.slice(2));
 console.dir(argv);
 ```
 
@@ -43,8 +42,8 @@ $ node example/parse.js -x 3 -y 4 -n5 -abc --beep=boop foo bar baz
 
 # methods
 
-```js
-var parseArgs = require("minimist");
+``` js
+var parseArgs = require('minimist')
 ```
 
 ## var argv = parseArgs(args, opts={})
@@ -61,31 +60,31 @@ Any arguments after `'--'` will not be parsed and will end up in `argv._`.
 
 options can be:
 
--   `opts.string` - a string or array of strings argument names to always treat
-    as strings
--   `opts.boolean` - a boolean, string or array of strings to always treat as
-    booleans. if `true` will treat all double hyphenated arguments without equal
-    signs as boolean (e.g. affects `--foo`, not `-f` or `--foo=bar`)
--   `opts.alias` - an object mapping string names to strings or arrays of string
-    argument names to use as aliases
--   `opts.default` - an object mapping string argument names to default values
--   `opts.stopEarly` - when true, populate `argv._` with everything after the
-    first non-option
--   `opts['--']` - when true, populate `argv._` with everything before the `--`
-    and `argv['--']` with everything after the `--`. Here's an example:
+* `opts.string` - a string or array of strings argument names to always treat as
+strings
+* `opts.boolean` - a boolean, string or array of strings to always treat as
+booleans. if `true` will treat all double hyphenated arguments without equal signs
+as boolean (e.g. affects `--foo`, not `-f` or `--foo=bar`)
+* `opts.alias` - an object mapping string names to strings or arrays of string
+argument names to use as aliases
+* `opts.default` - an object mapping string argument names to default values
+* `opts.stopEarly` - when true, populate `argv._` with everything after the
+first non-option
+* `opts['--']` - when true, populate `argv._` with everything before the `--`
+and `argv['--']` with everything after the `--`. Here's an example:
 
-    ```
-    > require('./')('one two three -- four five --six'.split(' '), { '--': true })
-    { _: [ 'one', 'two', 'three' ],
-      '--': [ 'four', 'five', '--six' ] }
-    ```
+  ```
+  > require('./')('one two three -- four five --six'.split(' '), { '--': true })
+  { _: [ 'one', 'two', 'three' ],
+    '--': [ 'four', 'five', '--six' ] }
+  ```
 
-    Note that with `opts['--']` set, parsing for arguments still stops after the
-    `--`.
+  Note that with `opts['--']` set, parsing for arguments still stops after the
+  `--`.
 
--   `opts.unknown` - a function which is invoked with a command line parameter
-    not defined in the `opts` configuration object. If the function returns
-    `false`, the unknown option is not added to `argv`.
+* `opts.unknown` - a function which is invoked with a command line parameter not
+defined in the `opts` configuration object. If the function returns `false`, the
+unknown option is not added to `argv`.
 
 # install
 
