@@ -2,7 +2,7 @@
 	"description": "parse argument options",
 	"devDependencies": {
 		"covert": "1.1.1",
-		"tap": "19.2.4",
+		"tap": "19.2.5",
 		"tape": "5.7.5"
 	},
 	"main": "index.js",
