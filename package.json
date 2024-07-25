@@ -1,14 +1,14 @@
 {
-	"description": "parse argument options",
-	"devDependencies": {
-		"covert": "^1.0.0",
-		"tap": "^14.9.2",
-		"tape": "^4.11.0"
-	},
-	"main": "index.js",
 	"name": "vscode-minimist",
+	"description": "parse argument options",
+	"main": "index.js",
 	"scripts": {
 		"coverage": "covert test/*.js"
+	},
+	"devDependencies": {
+		"covert": "1.1.1",
+		"tap": "21.0.0",
+		"tape": "5.8.1"
 	},
 	"testling": {
 		"browsers": [
