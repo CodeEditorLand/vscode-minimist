@@ -1,14 +1,15 @@
 {
+	"name": "@codeeditorland/minimist",
 	"description": "parse argument options",
+	"main": "index.js",
+	"scripts": {
+		"coverage": "covert test/*.js"
+	},
+	"dependencies": {},
 	"devDependencies": {
 		"covert": "1.1.1",
 		"tap": "21.0.1",
 		"tape": "5.9.0"
-	},
-	"main": "index.js",
-	"name": "vscode-minimist",
-	"scripts": {
-		"coverage": "covert test/*.js"
 	},
 	"testling": {
 		"browsers": [
